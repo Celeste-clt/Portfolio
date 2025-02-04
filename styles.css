@@ -1,0 +1,385 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #fff;
+    overflow-x: hidden;
+  
+    
+}
+
+/* Style du header */
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 2rem;
+}
+
+/* Logo */
+#logo {
+    width: 5rem;
+    font-weight: bold;
+    margin-left: 2px;
+}
+
+/* Navigation classique */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+}
+
+/* Style des liens dans la navigation */
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 10px 20px;
+    transition: color 0.3s;
+}
+
+/* Effet hover */
+nav a:hover {
+    color: #ac0808;
+    cursor: pointer;
+}
+
+/* Cacher la navigation sous forme de liens lorsque l'écran est petit */
+.menu-toggle {
+    display: none;
+}
+
+#menu-icon {
+    width: 300px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Media queries pour les écrans plus petits (moins de 768px) */
+@media (max-width: 768px) {
+    /* Cacher les liens du menu en version mobile */
+    nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Placer le menu sous le header */
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 100%;
+        z-index: 1000;
+        padding: 10px 0;
+        gap: 0;
+    }
+
+    /* Afficher le menu burger */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Lorsque le menu burger est cliqué, afficher les liens */
+    nav.active {
+        display: flex;
+    }
+
+    /* Style des liens du menu en version mobile */
+    nav a {
+        padding: 15px;
+        text-align: center;
+        width: 100%;
+        color: yellowgreen; /* Assurer que le texte reste blanc */
+    }
+
+    /* Ajouter un effet de transition au menu burger */
+    nav a:hover {
+        color: #ac0808;
+    }
+}
+
+
+
+
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px; /
+}
+
+h1 {
+    margin-bottom: 40px;  
+}
+
+h2 {
+
+    margin-top: 100px;  
+}
+
+h3{
+    margin-top: 40px;
+    text-align: center;
+    font-size: 50px;
+}
+/*---------Titre 1er d'accueil--------*/
+#accueil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    
+}
+
+#accueil h1 {
+    font-size: 3rem;
+}
+
+
+/*--------------------------------*/
+
+
+
+/*----------Page projets-----------*/
+#projets {
+    text-align: center; /* Centrer le texte dans #projets */
+    display: flex;
+    justify-content: center; /* Centrer la galerie horizontalement */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes fixes */
+    gap: 50px; /* Augmenter l'espace entre les éléments */
+    max-width: 1200px; /* Largeur maximale de la galerie */
+    margin-top: 40px;
+    justify-items: center; /* Centrer les éléments de la grille horizontalement */
+    align-items: center; /* Centrer les éléments de la grille verticalement */
+    width: 100%; /* S'assurer que la galerie prend toute la largeur disponible */
+}
+
+.project {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 500px; /* Augmenter la largeur maximale des projets */
+    width: 100%; /* L'élément prend toute la largeur disponible dans la grille */
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project img {
+    width: 100%; 
+    height: auto;
+    border-bottom: 2px solid #ddd;
+}
+
+.legend {
+    padding: 15px;
+    font-size: 1.1em; /* Augmenter la taille de la police de la légende */
+    color: #555;
+    background-color: #fff;
+    border-top: 2px solid #ddd;
+    margin: 0;
+}
+
+/*-------------------------------*/
+
+/*----------------Italie---------------*/
+
+#blabla {
+   
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center;
+    
+}
+
+h4{
+    font-size: 30px;
+    margin: 20px;
+}
+
+.details{
+    border-style: groove;
+    border-color: white;
+    border-radius: 10px;
+    padding: 2%;
+    margin: 30px;
+}
+
+#illustration{
+    width: 600px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+
+/*--boutons swip--*/
+
+#bouton {
+    display: flex;
+    justify-content: center;  /* Centre les boutons horizontalement */
+    align-items: center;      /* Centre les boutons verticalement */
+}
+
+.swip {
+    margin: 20px;           
+    padding: 10px 20px;      
+    background-color: white;  
+    border-style: groove;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.swip:hover {
+    background-color: transparent; 
+    color: white;
+    border-style: groove;
+    border-color: white;
+}
+ /*--*/
+
+
+/*------email-------------*/
+#email {
+    color: pink;
+    text-decoration: none;
+}
+
+#email:hover {
+    text-decoration: underline;
+}
+/*---------------------------*/
+
+
+/*-------------about---------------*/
+
+
+
+.content {
+    display: flex;
+    align-items: center;  
+    gap: 20px;  
+}
+
+.me {
+    width: 150px;  
+    height: auto;
+}
+
+.presentation {
+    max-width: 60%;  
+    line-height: 1.6; 
+}
+
+/*--------------------------------------*/
+
+
+/*-------------footer------------*/
+footer {
+    background-color: rgba(0, 0, 0, 0.9); 
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; 
+   
+  }
+  
+  .footer-icon img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  .footer-icon img:hover {
+    transform: scale(1.2); 
+    filter: brightness(1.2); 
+  }
+
+
+  /* Media queries pour les écrans plus petits (moins de 768px) */
+  @media (max-width: 768px) {
+    .footer-container {
+      gap: 20px; /* Réduit l'espace entre les icônes sur mobile */
+    }
+  
+    .footer-icon img {
+      width: 25px;
+      height: 25px; /* Ajuste la taille des icônes sur mobile */
+    }
+  }
+  
+
+
+/*-----------------Animation des étoiles-------------*/
+@keyframes stars {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 999;
+
+}
+
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: white;
+    border-radius: 50%;
+    animation: stars 1.5s infinite alternate;
+}
+
+.star:nth-child(even) {
+    animation-duration: 2s;
+}
+
+/* Effet de scroll fluide */
+html {
+    scroll-behavior:smooth;
+}
