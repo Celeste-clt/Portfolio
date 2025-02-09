@@ -246,13 +246,11 @@ h3{
     text-transform: uppercase;
     letter-spacing: 4px;
     position: relative;
-    display: inline-block;
     padding-bottom: 10px;
     border-bottom: 4px solid transparent;
 }
 
 #title::after {
-    content: "";
     position: absolute;
     width: 50%;
     height: 4px;
