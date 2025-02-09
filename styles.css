@@ -214,32 +214,170 @@ h3{
 
 /*----------------Italie---------------*/
 
-#blabla {
-   
-    justify-content: center !important;
-    align-items: center !important;
+#return {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    margin-top: 30px; 
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 40px;  
+}
+
+#return:hover {
+    background-color: white;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+
+#title {
     text-align: center;
-    
+    font-size: 3.5rem;
+    color: #e6e6e6;
+    margin-top: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    border-bottom: 4px solid transparent;
 }
 
-h4{
-    font-size: 30px;
-    margin: 20px;
+#title::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 4px;
+    background-color: white;
+    bottom: 0;
+    left: 25%;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
 }
 
-.details{
-    border-style: groove;
-    border-color: white;
-    border-radius: 10px;
-    padding: 2%;
-    margin: 30px;
+#title:hover::after {
+    transform: scaleX(1);
 }
 
-#illustration{
-    width: 600px;
-    border-radius: 10px;
-    margin: 10px;
+/* Section de contenu - Blabla */
+#blabla {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+    max-width: 1000px;
+    text-align: center;
+    color: #f5f5f5;
 }
+
+#blabla img {
+    width: 80%;
+    max-width: 650px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin: 30px 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#blabla img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+}
+
+
+.details {
+    margin-top: 30px;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 900px;
+    text-align: left;
+}
+
+.details h4 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+.details p {
+    color: #f5f5f5;
+}
+
+/* Effets de fade-in */
+@keyframes fadeInContent {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#title, #blabla img, .details {
+    animation: fadeInContent 1s ease-out;
+}
+
+/* Effet de séparation */
+#blabla {
+    position: relative;
+    padding-bottom: 30px;
+}
+
+#blabla::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    opacity: 0.6;
+}
+
+#blabla::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    opacity: 0.6;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    #blabla img {
+        width: 90%;
+        max-width: 500px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .details {
+        font-size: 1rem;
+    }
+
+    #return {
+        width: 100%;
+        text-align: center;
+    }
+}
+
 
 
 /*--boutons swip--*/
