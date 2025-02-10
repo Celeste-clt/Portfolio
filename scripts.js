@@ -61,7 +61,18 @@ menuToggle.addEventListener('click', () => {
 
 
 
-/*------Contact------*/
+/*------Etoile------*/
 
 
+// Créer l'élément du curseur étoile
+const starCursor = document.createElement('div');
+starCursor.classList.add('star-cursor');
+document.body.appendChild(starCursor);
+
+// Suivre le mouvement de la souris
+document.addEventListener('mousemove', (e) => {
+    // Déplacer l'étoile à la position de la souris
+    starCursor.style.left = `${e.pageX}px`;
+    starCursor.style.top = `${e.pageY}px`;
+});
 
