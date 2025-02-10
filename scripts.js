@@ -61,8 +61,7 @@ menuToggle.addEventListener('click', () => {
 
 
 
-/*------lier les pages------*/
-
+/*------Contact------*/
 
 
 
