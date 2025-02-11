@@ -4,17 +4,13 @@
     box-sizing: border-box;
 }
 
-
 body {
     font-family: Arial, sans-serif;
     background-color: #000000;
     color: #fff;
     overflow-x: hidden;
-
-
 }
 
-/* Style du header */
 header {
     position: relative;
     top: 0;
@@ -30,14 +26,13 @@ header {
     font-size: 2rem;
 }
 
-/* Logo */
 #logo {
     width: 5rem;
     font-weight: bold;
     margin-left: 2px;
 }
 
-/* Navigation classique */
+
 nav {
     display: flex;
     justify-content: center;
@@ -46,7 +41,6 @@ nav {
     width: 100%;
 }
 
-/* Style des liens dans la navigation */
 nav a {
     text-decoration: none;
     color: #ffffff;
@@ -55,13 +49,12 @@ nav a {
     transition: color 0.3s;
 }
 
-/* Effet hover */
+
 nav a:hover {
     color: #ac0808;
     cursor: pointer;
 }
 
-/* Cacher la navigation sous forme de liens lorsque l'écran est petit */
 .menu-toggle {
     display: none;
 }
@@ -73,16 +66,13 @@ nav a:hover {
     align-items: center;
 }
 
-/* Media queries pour les écrans plus petits (moins de 768px) */
+/* Media queries pour les écrans plus petits*/
 @media (max-width: 768px) {
-
-    /* Cacher les liens du menu en version mobile */
     nav {
         display: none;
         flex-direction: column;
         position: absolute;
         top: 60px;
-        /* Placer le menu sous le header */
         left: 0;
         background-color: rgba(0, 0, 0, 0.9);
         width: 100%;
@@ -90,34 +80,23 @@ nav a:hover {
         padding: 10px 0;
         gap: 0;
     }
-
-    /* Afficher le menu burger */
     .menu-toggle {
         display: block;
     }
-
-    /* Lorsque le menu burger est cliqué, afficher les liens */
     nav.active {
         display: flex;
     }
-
-    /* Style des liens du menu en version mobile */
     nav a {
         padding: 15px;
         text-align: center;
         width: 100%;
-        color: yellowgreen;
-        /* Assurer que le texte reste blanc */
+        color: #ac0808;
     }
 
-    /* Ajouter un effet de transition au menu burger */
     nav a:hover {
         color: #ac0808;
     }
 }
-
-
-
 
 
 h1,
@@ -142,7 +121,7 @@ h3 {
     font-size: 50px;
 }
 
-/*---------Titre 1er d'accueil--------*/
+/*--------------------------------Titre 1er d'accueil-------------------------------*/
 #accueil {
     display: flex;
     justify-content: center;
@@ -158,11 +137,11 @@ h3 {
 }
 
 
-/*--------------------------------*/
+/*-----------------------------------------------------------------------------------*/
 
 
 
-/*----------Page projets-----------*/
+/*-------------------------------Page projets----------------------------------------*/
 #projets {
     text-align: center;
     /* Centrer le texte dans #projets */
@@ -181,16 +160,11 @@ h3 {
     grid-template-columns: repeat(2, 1fr);
     /* 2 colonnes fixes */
     gap: 50px;
-    /* Augmenter l'espace entre les éléments */
     max-width: 1200px;
-    /* Largeur maximale de la galerie */
     margin-top: 40px;
     justify-items: center;
-    /* Centrer les éléments de la grille horizontalement */
     align-items: center;
-    /* Centrer les éléments de la grille verticalement */
     width: 100%;
-    /* S'assurer que la galerie prend toute la largeur disponible */
 }
 
 .project {
@@ -201,9 +175,7 @@ h3 {
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     max-width: 500px;
-    /* Augmenter la largeur maximale des projets */
     width: 100%;
-    /* L'élément prend toute la largeur disponible dans la grille */
 }
 
 .project:hover {
@@ -227,9 +199,9 @@ h3 {
     margin: 0;
 }
 
-/*-------------------------------*/
+/*---------------------------------------------------------------------------------*/
 
-/*----------------Italie---------------*/
+/*---------------------------------Page avec 1 projet------------------------------*/
 
 #return {
     background-color: transparent;
@@ -282,7 +254,7 @@ h3 {
     transform: scaleX(1);
 }
 
-/* Section de contenu - Blabla */
+/*--------------------------Section de contenu - Blabla ----------------------------*/
 #blabla {
     display: flex;
     flex-direction: column;
@@ -328,7 +300,6 @@ h3 {
     color: #f5f5f5;
 }
 
-/* Effets de fade-in */
 @keyframes fadeInContent {
     0% {
         opacity: 0;
@@ -375,7 +346,7 @@ h3 {
     opacity: 0.6;
 }
 
-/* Responsiveness */
+
 @media (max-width: 768px) {
     #blabla img {
         width: 90%;
@@ -398,7 +369,7 @@ h3 {
 
 
 
-/*--boutons swip--*/
+/*--------------------------------boutons swip--------------------------------------*/
 
 #bouton {
     display: flex;
@@ -423,10 +394,10 @@ h3 {
     border-color: white;
 }
 
-/*------------------*/
+/*-----------------------------------------------------------------------------------*/
 
 
-/*-------------about---------------*/
+/*----------------------------------------about------------------------------------*/
 .content {
     display: flex;
     align-items: center;
@@ -443,11 +414,11 @@ h3 {
     line-height: 1.3;
 }
 
-/*--------------------------------------*/
+/*------------------------------------------------------------------------------------*/
 
-/*----------Contact----------*/
+/*-----------------------------------Contact------------------------------------------*/
 
-/*-----email------*/
+/*-------------------------------------email---------------------------------------*/
 
 
 #email, #tel, #linkedin {
@@ -482,9 +453,9 @@ h3 {
     text-decoration: underline;
 }
 
-/*---------------------------*/
+/*----------------------------------------------------------------------------------*/
 
-/*-------------footer------------*/
+/*-----------------------------------footer------------------------------------------*/
 footer {
     background-color: rgba(0, 0, 0, 0.9);
     color: #fff;
@@ -574,7 +545,7 @@ html {
 }
 
 
-/*------------Curseur------------*/
+/*----------------------------------------Curseur-----------------------------------*/
 
 .content {
     text-align: center;
