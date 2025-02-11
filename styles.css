@@ -10,8 +10,8 @@ body {
     background-color: #000000;
     color: #fff;
     overflow-x: hidden;
-  
-    
+
+
 }
 
 /* Style du header */
@@ -75,12 +75,14 @@ nav a:hover {
 
 /* Media queries pour les écrans plus petits (moins de 768px) */
 @media (max-width: 768px) {
+
     /* Cacher les liens du menu en version mobile */
     nav {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 60px; /* Placer le menu sous le header */
+        top: 60px;
+        /* Placer le menu sous le header */
         left: 0;
         background-color: rgba(0, 0, 0, 0.9);
         width: 100%;
@@ -104,7 +106,8 @@ nav a:hover {
         padding: 15px;
         text-align: center;
         width: 100%;
-        color: yellowgreen; /* Assurer que le texte reste blanc */
+        color: yellowgreen;
+        /* Assurer que le texte reste blanc */
     }
 
     /* Ajouter un effet de transition au menu burger */
@@ -117,26 +120,28 @@ nav a:hover {
 
 
 
-h1, h2 {
+h1,
+h2 {
     text-align: center;
-    margin-bottom: 20px; /
+    margin-bottom: 20px;/
 }
 
 h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-bottom: 40px;  
+    margin-bottom: 40px;
 }
 
 h2 {
 
-    margin-top: 100px;  
+    margin-top: 100px;
 }
 
-h3{
+h3 {
     margin-top: 40px;
     text-align: center;
     font-size: 50px;
 }
+
 /*---------Titre 1er d'accueil--------*/
 #accueil {
     display: flex;
@@ -145,7 +150,7 @@ h3{
     height: 100vh;
     text-align: center;
     color: white;
-    
+
 }
 
 #accueil h1 {
@@ -159,25 +164,33 @@ h3{
 
 /*----------Page projets-----------*/
 #projets {
-    text-align: center; /* Centrer le texte dans #projets */
+    text-align: center;
+    /* Centrer le texte dans #projets */
     display: flex;
-    justify-content: center; /* Centrer la galerie horizontalement */
+    justify-content: center;
+    /* Centrer la galerie horizontalement */
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    
+
 }
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 colonnes fixes */
-    gap: 50px; /* Augmenter l'espace entre les éléments */
-    max-width: 1200px; /* Largeur maximale de la galerie */
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 colonnes fixes */
+    gap: 50px;
+    /* Augmenter l'espace entre les éléments */
+    max-width: 1200px;
+    /* Largeur maximale de la galerie */
     margin-top: 40px;
-    justify-items: center; /* Centrer les éléments de la grille horizontalement */
-    align-items: center; /* Centrer les éléments de la grille verticalement */
-    width: 100%; /* S'assurer que la galerie prend toute la largeur disponible */
+    justify-items: center;
+    /* Centrer les éléments de la grille horizontalement */
+    align-items: center;
+    /* Centrer les éléments de la grille verticalement */
+    width: 100%;
+    /* S'assurer que la galerie prend toute la largeur disponible */
 }
 
 .project {
@@ -187,8 +200,10 @@ h3{
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    max-width: 500px; /* Augmenter la largeur maximale des projets */
-    width: 100%; /* L'élément prend toute la largeur disponible dans la grille */
+    max-width: 500px;
+    /* Augmenter la largeur maximale des projets */
+    width: 100%;
+    /* L'élément prend toute la largeur disponible dans la grille */
 }
 
 .project:hover {
@@ -197,14 +212,15 @@ h3{
 }
 
 .project img {
-    width: 100%; 
+    width: 100%;
     height: auto;
     border-bottom: 2px solid #ddd;
 }
 
 .legend {
     padding: 15px;
-    font-size: 1.1em; /* Augmenter la taille de la police de la légende */
+    font-size: 1.1em;
+    /* Augmenter la taille de la police de la légende */
     color: #555;
     background-color: #fff;
     border-top: 2px solid #ddd;
@@ -225,11 +241,11 @@ h3{
     border-radius: 30px;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-    margin-top: 30px; 
+    margin-top: 30px;
     display: inline-block;
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin-bottom: 40px;  
+    margin-bottom: 40px;
 }
 
 #return:hover {
@@ -318,13 +334,16 @@ h3{
         opacity: 0;
         transform: translateY(20px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-#title, #blabla img, .details {
+#title,
+#blabla img,
+.details {
     animation: fadeInContent 1s ease-out;
 }
 
@@ -383,14 +402,16 @@ h3{
 
 #bouton {
     display: flex;
-    justify-content: center;  /* Centre les boutons horizontalement */
-    align-items: center;      /* Centre les boutons verticalement */
+    justify-content: center;
+    /* Centre les boutons horizontalement */
+    align-items: center;
+    /* Centre les boutons verticalement */
 }
 
 .swip {
-    margin: 20px;           
-    padding: 10px 20px;      
-    background-color: white;  
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: white;
     border-style: groove;
     border-radius: 10px;
     cursor: pointer;
@@ -398,24 +419,13 @@ h3{
 }
 
 .swip:hover {
-    background-color: transparent; 
+    background-color: transparent;
     color: white;
     border-style: groove;
     border-color: white;
 }
- /*--*/
 
-
-/*------email-------------*/
-#email {
-    color: pink;
-    text-decoration: none;
-}
-
-#email:hover {
-    text-decoration: underline;
-}
-/*---------------------------*/
+/*------------------*/
 
 
 /*-------------about---------------*/
@@ -424,75 +434,120 @@ h3{
 
 .content {
     display: flex;
-    align-items: center;  
-    gap: 20px;  
+    align-items: center;
+    gap: 20px;
 }
 
 .me {
-    width: 150px;  
+    width: 150px;
     height: auto;
 }
 
 .presentation {
-    max-width: 60%;  
-    line-height: 1.6; 
+    max-width: 60%;
+    line-height: 1.6;
 }
 
 /*--------------------------------------*/
 
 /*----------Contact----------*/
 
+/*-----email------*/
+#contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
 
+#email, #tel {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 30px;
+    text-align: left;
+}
+
+#image {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    max-width: 200px; 
+    height: auto;
+}
+
+.contact {
+    color: white;
+    text-decoration: none;
+}
+
+.contact:hover {
+    color: #ac0808;
+    text-decoration: underline;
+}
+
+/*---------------------------*/
 
 /*-------------footer------------*/
 footer {
-    background-color: rgba(0, 0, 0, 0.9); 
+    background-color: rgba(0, 0, 0, 0.9);
     color: #fff;
     padding: 20px;
     text-align: center;
     position: relative;
     bottom: 0;
     width: 100%;
-  }
-  
-  .footer-container {
+}
+
+.footer-container {
     display: flex;
     justify-content: center;
-    gap: 30px; 
-   
-  }
-  
-  .footer-icon img {
+    gap: 30px;
+
+}
+
+.footer-icon img {
     width: 30px;
     height: 30px;
     transition: transform 0.3s ease, filter 0.3s ease;
-  }
-  
-  .footer-icon img:hover {
-    transform: scale(1.2); 
-    filter: brightness(1.2); 
-  }
+}
+
+.footer-icon img:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
 
 
-  /* Media queries pour les écrans plus petits (moins de 768px) */
-  @media (max-width: 768px) {
+/* Media queries pour les écrans plus petits (moins de 768px) */
+@media (max-width: 768px) {
     .footer-container {
-      gap: 20px; /* Réduit l'espace entre les icônes sur mobile */
+        gap: 20px;
+        /* Réduit l'espace entre les icônes sur mobile */
     }
-  
+
     .footer-icon img {
-      width: 25px;
-      height: 25px; /* Ajuste la taille des icônes sur mobile */
+        width: 25px;
+        height: 25px;
+        /* Ajuste la taille des icônes sur mobile */
     }
-  }
-  
+}
+
 
 
 /*-----------------Animation des étoiles-------------*/
 @keyframes stars {
-    0% { opacity: 0; }
-    50% { opacity: 1; }
-    100% { opacity: 0; }
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 .stars {
@@ -521,7 +576,7 @@ footer {
 
 /* Effet de scroll fluide */
 html {
-    scroll-behavior:smooth;
+    scroll-behavior: smooth;
 }
 
 
@@ -546,6 +601,7 @@ html {
     0% {
         opacity: 0.7;
     }
+
     100% {
         opacity: 1;
     }
