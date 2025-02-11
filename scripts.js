@@ -61,7 +61,7 @@ menuToggle.addEventListener('click', () => {
 
 
 
-/*------Etoile------*/
+/*------Etoile cursor------*/
 
 
 // Créer l'élément du curseur étoile
@@ -75,4 +75,10 @@ document.addEventListener('mousemove', (e) => {
     starCursor.style.left = `${e.pageX}px`;
     starCursor.style.top = `${e.pageY}px`;
 });
+
+/*------Bouton retour-----*/
+
+document.getElementById("return").addEventListener("click",() => {
+    window.location.href = 'projets.html';
+})
 
