@@ -127,7 +127,9 @@ h3 {
     height: 100vh;
     text-align: center;
     color: white;
-    font-family: 'mea culpa static' ;
+    font-family: 'Shrikhand', serif ;
+    letter-spacing: 2px;
+    font-weight: 400;
 
 }
 
