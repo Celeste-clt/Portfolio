@@ -49,13 +49,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-// Sélectionner le bouton menu burger et la navigation
+// Sélectionner le bouton menu 
 const menuToggle = document.getElementById('menu-toggle');
 const nav = document.querySelector('nav');
 
-// Ajouter un événement au clic sur le menu burger
 menuToggle.addEventListener('click', () => {
-    // Alterner la classe "active" pour afficher/masquer le menu
     nav.classList.toggle('active');
 });
 
@@ -63,8 +61,6 @@ menuToggle.addEventListener('click', () => {
 
 /*------Etoile cursor------*/
 
-
-// Créer l'élément du curseur étoile
 const starCursor = document.createElement('div');
 starCursor.classList.add('star-cursor');
 document.body.appendChild(starCursor);
