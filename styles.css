@@ -223,7 +223,7 @@ h3 {
 
 #return:hover {
     background-color: white;
-    color: #fff;
+    color: black;
     transform: scale(1.05);
 }
 
