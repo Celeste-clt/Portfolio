@@ -586,6 +586,7 @@ html {
 }
 
 .star-cursor {
+    z-index: 9999;
     position: absolute;
     width: 20px;
     height: 20px;
