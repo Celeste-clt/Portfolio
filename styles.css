@@ -134,8 +134,27 @@ h3 {
 
 }
 
+
 #accueil h1 {
     font-size: 5rem;
+}
+
+@media (max-width: 1024px) {
+    #accueil h1 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #accueil h1{
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #accueil h1 {
+        font-size: 2rem;
+    }
 }
 
 
@@ -405,25 +424,14 @@ video {
 
 
 /*----------------------------------------about------------------------------------*/
-.content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    padding: 40px;
-    margin-bottom: 40px;
-}
+
 
 .me {
     width: 150px;
     height: auto;
 }
 
-.presentation {
-    text-align: center;
-    max-width: 60%;
-    line-height: 1.3;
-}
+
 
 /*------------------------------------------------------------------------------------*/
 
