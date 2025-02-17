@@ -82,10 +82,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const pages = ["Italie.html", "quiz.html", "cache.html", "frappe.html"];
     
     function getNextPage(direction) {
-        let currentPage = window.location.pathname.split("/").pop(); // Récupère la page actuelle
+        let currentPage = window.location.pathname.split("/").pop(); 
         let index = pages.indexOf(currentPage);
 
-        if (index === -1) return; // Si la page actuelle n'est pas dans la liste, on ne fait rien
+        if (index === -1) return; 
 
         if (direction === "prev") {
             index = (index + 1) % pages.length; // Aller à la page suivante selon l'ordre donné
@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
             index = (index - 1 + pages.length) % pages.length; // Aller à la page précédente
         }
 
-        window.location.href = pages[index]; // Redirige vers la page calculée
+        window.location.href = pages[index];
     }
 
     document.querySelector(".swipPrev").addEventListener("click", function () {
