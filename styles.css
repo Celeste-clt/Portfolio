@@ -431,7 +431,22 @@ video {
     height: auto;
 }
 
+.pdf {
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    border-style: groove;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
 
+.pdf:hover{
+    background-color: transparent;
+    color: white;
+    border-style: groove;
+    border-color: white;
+}
 
 /*------------------------------------------------------------------------------------*/
 

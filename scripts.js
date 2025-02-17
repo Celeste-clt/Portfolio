@@ -82,3 +82,10 @@ document.addEventListener("DOMContentLoaded", function () {
         getNextPage("next");
     });
 });
+
+
+//--PDF 
+
+    function PDF() {
+        window.open("Céleste COLLETTI-alternance.pdf", "_blank");
+    }
