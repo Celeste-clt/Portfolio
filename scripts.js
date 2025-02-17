@@ -75,6 +75,32 @@ document.addEventListener('mousemove', (e) => {
 /*------Bouton retour-----*/
 
 document.getElementById("return").addEventListener("click",() => {
-    window.location.href = 'projets.html';
+    window.location.href = 'index.html';
 })
 
+document.addEventListener("DOMContentLoaded", function () {
+    const pages = ["Italie.html", "quiz.html", "cache.html", "frappe.html"];
+    
+    function getNextPage(direction) {
+        let currentPage = window.location.pathname.split("/").pop(); // Récupère la page actuelle
+        let index = pages.indexOf(currentPage);
+
+        if (index === -1) return; // Si la page actuelle n'est pas dans la liste, on ne fait rien
+
+        if (direction === "prev") {
+            index = (index + 1) % pages.length; // Aller à la page suivante selon l'ordre donné
+        } else {
+            index = (index - 1 + pages.length) % pages.length; // Aller à la page précédente
+        }
+
+        window.location.href = pages[index]; // Redirige vers la page calculée
+    }
+
+    document.querySelector(".swipPrev").addEventListener("click", function () {
+        getNextPage("prev");
+    });
+
+    document.querySelector(".swipNext").addEventListener("click", function () {
+        getNextPage("next");
+    });
+});
