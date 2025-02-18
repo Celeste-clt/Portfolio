@@ -109,10 +109,6 @@ h1 {
     margin-bottom: 40px;
 }
 
-h2 {
-
-    margin-top: 100px;
-}
 
 h3 {
     margin-top: 40px;
@@ -123,6 +119,7 @@ h3 {
 /*!--------------------------------Titre 1er d'accueil-------------------------------*/
 #accueil {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
