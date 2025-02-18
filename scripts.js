@@ -53,9 +53,10 @@ document.addEventListener('mousemove', (e) => {
 /*------Bouton retour-----*/
 
 document.getElementById("return").addEventListener("click",() => {
-    window.location.href = 'index.html';
+    window.location.href = 'projets.html';
 })
 
+// Bouton swip
 document.addEventListener("DOMContentLoaded", function () {
     const pages = ["Italie.html", "quiz.html", "cache.html", "frappe.html"];
     
