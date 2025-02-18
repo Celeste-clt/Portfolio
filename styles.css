@@ -126,7 +126,6 @@ h3 {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    text-align: center;
     color: white;
     font-family: 'Shrikhand', serif ;
     letter-spacing: 2px;
@@ -134,9 +133,14 @@ h3 {
 
 }
 
-
 #accueil h1 {
     font-size: 5rem;
+    text-shadow: 
+        1px 1px 0px rgba(0, 0, 0, 0.9),  /* Contour noir décalé */
+        -1px -1px 0px rgba(0, 0, 0, 0.9), /* Contour noir décalé dans l'autre sens */
+        0 0 10px white,      /* Ombre blanche */
+        0 0 20px white,      /* Ombre blanche */
+        0 0 20px #ffffff;    /* Ombre plus diffuse */
 }
 
 @media (max-width: 1024px) {
@@ -468,11 +472,10 @@ video {
     margin-top: 10px;
     background-color: #000000;
     box-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px #ffffff; 
+    height: 30vh;
 }
 
-#linkedin {
-    margin-bottom: 200px;
-}
+
 
 #image {
     display: flex;
