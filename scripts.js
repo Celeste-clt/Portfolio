@@ -56,6 +56,13 @@ document.getElementById("return").addEventListener("click",() => {
     window.location.href = 'projets.html';
 })
 
+
+//  logo
+
+document.getElementById("logo").addEventListener("click", () => {
+    window.location.href = "index.html";
+});
+
 // Bouton swip
 document.addEventListener("DOMContentLoaded", function () {
     const pages = ["Italie.html", "quiz.html", "cache.html", "frappe.html"];
