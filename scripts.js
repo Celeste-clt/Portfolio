@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 //&----------------------------- Bouton swip
 document.addEventListener("DOMContentLoaded", function () {
-    const pages = ["italie.html", "quiz.html", "cache.html", "frappe.html"];
+    const pages = ["frappe.html", "cache.html", "quiz.html", "italie.html"];
     
     function getNextPage(direction) {
         let currentPage = window.location.pathname.split("/").pop(); 
