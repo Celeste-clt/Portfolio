@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    // d'étoiles scintillantes
+    //& ---------background étoile 
     const starField = document.createElement('div');
     starField.classList.add('stars');
     document.body.appendChild(starField);
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-// Sélectionner le bouton menu 
+//& -------------Sélectionner le bouton menu sur mobile
 const menuToggle = document.getElementById('menu-toggle');
 const nav = document.querySelector('nav');
 
@@ -39,7 +39,7 @@ menuToggle.addEventListener('click', () => {
 
 
 
-/*------Etoile cursor------*/
+//&---------------------Etoile cursor
 
 const starCursor = document.createElement('div');
 starCursor.classList.add('star-cursor');
@@ -50,21 +50,21 @@ document.addEventListener('mousemove', (e) => {
     starCursor.style.top = `${e.pageY}px`;
 });
 
-/*------Bouton retour-----*/
+//&-----------------------Bouton retour
 
 document.getElementById("return").addEventListener("click",() => {
     window.location.href = 'projets.html';
 })
 
 
-//  logo
+//&---------------------------Logo
 
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("logo").addEventListener("click", function() {
         window.location.href = "index.html";
     });
 });
-// Bouton swip
+//&----------------------------- Bouton swip
 document.addEventListener("DOMContentLoaded", function () {
     const pages = ["Italie.html", "quiz.html", "cache.html", "frappe.html"];
     
@@ -75,9 +75,9 @@ document.addEventListener("DOMContentLoaded", function () {
         if (index === -1) return; 
 
         if (direction === "prev") {
-            index = (index + 1) % pages.length; // Aller à la page suivante selon l'ordre donné
+            index = (index + 1) % pages.length; 
         } else {
-            index = (index - 1 + pages.length) % pages.length; // Aller à la page précédente
+            index = (index - 1 + pages.length) % pages.length; 
         }
 
         window.location.href = pages[index];
@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-//--PDF 
+//&------------------------------PDF 
 
     function PDF() {
         window.open("Céleste COLLETTI-alternance.pdf", "_blank");
