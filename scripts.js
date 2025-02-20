@@ -59,10 +59,11 @@ document.getElementById("return").addEventListener("click",() => {
 
 //  logo
 
-document.getElementById("logo").addEventListener("click", () => {
-    window.location.href = "index.html";
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("logo").addEventListener("click", function() {
+        window.location.href = "index.html";
+    });
 });
-
 // Bouton swip
 document.addEventListener("DOMContentLoaded", function () {
     const pages = ["Italie.html", "quiz.html", "cache.html", "frappe.html"];
