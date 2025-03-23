@@ -426,32 +426,86 @@ video {
 
 /*&----------------------------------------about------------------------------------*/
 
-#textAbout{
-    text-align: center;
-    padding: 10px;
-}
-
-.me {
-    width: 150px;
-    height: auto;
-}
-
-.pdf {
-    margin: 20px;
-    padding: 10px 20px;
-    background-color: white;
-    border-style: groove;
+#a-propos {
+  
+    padding: 50px;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    margin: 0 auto;
+    width: 80%;
+}
+
+
+
+#textAbout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+#textAbout .me {
+    border-radius: 50%;
+    width: 180px; 
+    height: 180px; 
+    object-fit: cover;
+
+}
+
+#textAbout .presentation {
+    max-width: 700px;
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+#textAbout .presentation br {
+    margin-bottom: 10px;
+}
+
+button.pdf {
+    background-color: black;
+    color: white;
+    border-color: #000000;
+    padding: 12px 30px;
+    font-size: 1rem;
+    border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    margin-top: 20px;
 }
 
-.pdf:hover{
-    background-color: transparent;
-    color: white;
-    border-style: groove;
-    border-color: white;
+button.pdf:hover {
+    background-color: white;
+    color: black;
 }
+
+@media (max-width: 768px) {
+    #textAbout{
+        width: 90%;
+        padding: 30px;
+    }
+
+    #textAbout {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #textAbout .me {
+        width: 150px; /* Taille réduite pour mobile */
+        height: 150px; /* Taille réduite pour mobile */
+    }
+
+    button.pdf {
+        width: 100%;
+    }
+}
+
+
 
 /*&------------------------------------------------------------------------------------*/
 
