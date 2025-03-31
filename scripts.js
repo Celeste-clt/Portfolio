@@ -96,5 +96,8 @@ document.addEventListener("DOMContentLoaded", function () {
 //&------------------------------PDF 
 
     function PDF() {
+
+        window.open("CV.pdf", "_blank");
+
         window.open("CV Céleste Colletti.pdf", "_blank");
     }
