@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 //&----------------------------- Bouton swip
 document.addEventListener("DOMContentLoaded", function () {
-    const pages = ["frappe.html", "cache.html", "quiz.html", "italie.html"];
+    const pages = ["finance.html", "frappe.html", "cache.html", "quiz.html", "italie.html"];
     
     function getNextPage(direction) {
         let currentPage = window.location.pathname.split("/").pop(); 
@@ -96,5 +96,8 @@ document.addEventListener("DOMContentLoaded", function () {
 //&------------------------------PDF 
 
     function PDF() {
+
         window.open("CV.pdf", "_blank");
+
+        window.open("CV Céleste Colletti.pdf", "_blank");
     }
