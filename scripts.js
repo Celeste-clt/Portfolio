@@ -1,100 +1,98 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
+  //& ---------background étoile
+  const starField = document.createElement("div");
+  starField.classList.add("stars");
+  document.body.appendChild(starField);
 
-    //& ---------background étoile 
-    const starField = document.createElement('div');
-    starField.classList.add('stars');
-    document.body.appendChild(starField);
+  const createStar = () => {
+    const star = document.createElement("div");
+    star.classList.add("star");
 
-    const createStar = () => {
-        const star = document.createElement('div');
-        star.classList.add('star');
-        
-      
-        const x = Math.random() * window.innerWidth;
-        const y = Math.random() * window.innerHeight;
-        const size = Math.random() * 2 + 1;
-        
-        star.style.left = `${x}px`;
-        star.style.top = `${y}px`;
-        star.style.width = `${size}px`;
-        star.style.height = `${size}px`;
-        starField.appendChild(star);
-        
-        setTimeout(() => star.remove(), 2000);
-    };
+    const x = Math.random() * window.innerWidth;
+    const y = Math.random() * window.innerHeight;
+    const size = Math.random() * 2 + 1;
 
-   
-    setInterval(createStar, 50);
+    star.style.left = `${x}px`;
+    star.style.top = `${y}px`;
+    star.style.width = `${size}px`;
+    star.style.height = `${size}px`;
+    starField.appendChild(star);
+
+    setTimeout(() => star.remove(), 2000);
+  };
+
+  setInterval(createStar, 50);
 });
-
-
 
 //& -------------Sélectionner le bouton menu sur mobile
-const menuToggle = document.getElementById('menu-toggle');
-const nav = document.querySelector('nav');
+const menuToggle = document.getElementById("menu-toggle");
+const nav = document.querySelector("nav");
 
-menuToggle.addEventListener('click', () => {
-    nav.classList.toggle('active');
+menuToggle.addEventListener("click", () => {
+  nav.classList.toggle("active");
 });
-
-
 
 //&---------------------Etoile cursor
 
-const starCursor = document.createElement('div');
-starCursor.classList.add('star-cursor');
+const starCursor = document.createElement("div");
+starCursor.classList.add("star-cursor");
 document.body.appendChild(starCursor);
 
-document.addEventListener('mousemove', (e) => {
-    starCursor.style.left = `${e.pageX}px`;
-    starCursor.style.top = `${e.pageY}px`;
+document.addEventListener("mousemove", (e) => {
+  starCursor.style.left = `${e.pageX}px`;
+  starCursor.style.top = `${e.pageY}px`;
 });
 
 //&-----------------------Bouton retour
 
-document.getElementById("return").addEventListener("click",() => {
-    window.location.href = 'projets.html';
-})
-
+document.getElementById("return").addEventListener("click", () => {
+  window.location.href = "projets.html";
+});
 
 //&---------------------------Logo
 
-document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("logo").addEventListener("click", function() {
-        window.location.href = "index.html";
-    });
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("logo").addEventListener("click", function () {
+    window.location.href = "index.html";
+  });
 });
 //&----------------------------- Bouton swip
 document.addEventListener("DOMContentLoaded", function () {
-    const pages = ["finance.html", "frappe.html", "cache.html", "quiz.html", "italie.html", "souvenir.html"];
-    
-    function getNextPage(direction) {
-        let currentPage = window.location.pathname.split("/").pop(); 
-        let index = pages.indexOf(currentPage);
+  const pages = [
+    "finance.html",
+    "frappe.html",
+    "cache.html",
+    "quiz.html",
+    "italie.html",
+    "souvenir.html",
+  ];
 
-        if (index === -1) return; 
+  function getNextPage(direction) {
+    let currentPage = window.location.pathname.split("/").pop();
+    let index = pages.indexOf(currentPage);
 
-        if (direction === "prev") {
-            index = (index + 1) % pages.length; 
-        } else {
-            index = (index - 1 + pages.length) % pages.length; 
-        }
+    if (index === -1) return;
 
-        window.location.href = pages[index];
+    if (direction === "prev") {
+      index = (index + 1) % pages.length;
+    } else {
+      index = (index - 1 + pages.length) % pages.length;
     }
 
-    document.querySelector(".swipPrev").addEventListener("click", function () {
-        getNextPage("prev");
-    });
+    window.location.href = pages[index];
+  }
 
-    document.querySelector(".swipNext").addEventListener("click", function () {
-        getNextPage("next");
-    });
+  document.querySelector(".swipPrev").addEventListener("click", function () {
+    getNextPage("prev");
+  });
+
+  document.querySelector(".swipNext").addEventListener("click", function () {
+    getNextPage("next");
+  });
 });
 
+//&------------------------------PDF
 
-//&------------------------------PDF 
-
-    function PDF() {
-        window.open("CV.pdf", "_blank");
-    }
+function PDF() {
+  window.open("CelesteCollettiCV.pdf", "_blank");
+}
