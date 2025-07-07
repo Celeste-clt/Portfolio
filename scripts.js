@@ -59,12 +59,12 @@ document.addEventListener("DOMContentLoaded", function () {
 //&----------------------------- Bouton swip
 document.addEventListener("DOMContentLoaded", function () {
   const pages = [
+    "souvenir.html",
     "finance.html",
     "frappe.html",
     "cache.html",
     "quiz.html",
     "italie.html",
-    "souvenir.html",
   ];
 
   function getNextPage(direction) {
@@ -94,5 +94,5 @@ document.addEventListener("DOMContentLoaded", function () {
 //&------------------------------PDF
 
 function PDF() {
-  window.open("CelesteCollettiCV.pdf", "_blank");
+  window.open("CelesteColletti_CV.pdf", "_blank");
 }
