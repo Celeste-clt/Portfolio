@@ -103,5 +103,5 @@ document.addEventListener("DOMContentLoaded", function () {
 //&------------------------------PDF
 
 function PDF() {
-  window.open("CV_celeste SUISSE.pdf", "_blank");
+  window.open("CelesteColletti_cv.pdf", "_blank");
 }
