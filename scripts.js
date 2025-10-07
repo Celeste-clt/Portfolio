@@ -24,6 +24,15 @@ document.addEventListener("DOMContentLoaded", () => {
   setInterval(createStar, 50);
 });
 
+//& Compétences
+
+window.addEventListener("DOMContentLoaded", () => {
+  const competencesSection = document.getElementById("competences");
+  competencesSection.classList.add("visible");
+});
+// const skill = document.getElementById("skills-container");
+// skill.innerHTML += skill.innerHTML;
+
 //& -------------Sélectionner le bouton menu sur mobile
 const menuToggle = document.getElementById("menu-toggle");
 const nav = document.querySelector("nav");
@@ -32,7 +41,7 @@ menuToggle.addEventListener("click", () => {
   nav.classList.toggle("active");
 });
 
-//&---------------------Etoile cursor
+//&---------------Etoile cursor
 
 const starCursor = document.createElement("div");
 starCursor.classList.add("star-cursor");
@@ -43,20 +52,20 @@ document.addEventListener("mousemove", (e) => {
   starCursor.style.top = `${e.pageY}px`;
 });
 
-//&-----------------------Bouton retour
+//&--------------Bouton retour
 
 document.getElementById("return").addEventListener("click", () => {
   window.location.href = "projets.html";
 });
 
-//&---------------------------Logo
+//&---------------Logo
 
 document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("logo").addEventListener("click", function () {
     window.location.href = "index.html";
   });
 });
-//&----------------------------- Bouton swip
+//&------------- Bouton swip
 document.addEventListener("DOMContentLoaded", function () {
   const pages = [
     "souvenir.html",
