@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
   setInterval(createStar, 50);
 });
 
-//& Compétences
+//&-------------- Compétences
 
 window.addEventListener("DOMContentLoaded", () => {
   const competencesSection = document.getElementById("competences");
@@ -103,5 +103,5 @@ document.addEventListener("DOMContentLoaded", function () {
 //&------------------------------PDF
 
 function PDF() {
-  window.open("CelesteColletti_cv.pdf", "_blank");
+  window.open("CelesteColletti_CV.pdf", "_blank");
 }
