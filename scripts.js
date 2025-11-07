@@ -103,5 +103,5 @@ document.addEventListener("DOMContentLoaded", function () {
 //&------------------------------PDF
 
 function PDF() {
-  window.open("CelesteColletti_CV.pdf", "_blank");
+  window.open("CelesteColletti.pdf", "_blank");
 }
